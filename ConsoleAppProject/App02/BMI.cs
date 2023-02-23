@@ -8,5 +8,9 @@
     /// </author>
     public class BMI
     {
+        int weight;
+        int height;
+        double hei
+
     }
 }
