@@ -1,6 +1,6 @@
 ﻿using ConsoleAppProject.App01;
-using ConsoleAppProject.App03;
-using ConsoleAppProject.Helpers;
+
+using ConsoleAppProject;
 using System;
 
 namespace ConsoleAppProject

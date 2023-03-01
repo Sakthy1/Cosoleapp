@@ -10,27 +10,46 @@ namespace ConsoleAppProject.App01
     /// </author>
     public class DistanceConverter
     {
-        int miles;
-        int feet;
-        const int FEET_TO _MILES=5280;
-        int fromDistance;
-        int toDistance;
-        string fromUnit;
-        string toUnit;
+        private double miles;
+        private double feet;
+       
         
-            public void Run()
+        
+       
+     
+        
+        public void Run()
+        {  
+            
+            
+         
+
+
+        }
+        private void InputMiles()
         {
-            Console.Writeline("which of the following programs would you select");
-            Console.writeline("Enter the FROM unit    ");
-            Console.Writeln
 
-            }
-            
+        }
+        private viod CalculateFeet()
+        {
 
+        }
+        private void OutputFeet()
+        {
+            Console.WriteLine("Please enter the number of miles:  ")
+            string value = Console.ReadLine();
+            miles = Convert.ToDouble(value);
 
+        }
+        private void CalculateFeet()
+        {
 
-                
-            
+        }
+        private void OutputFeet()
+
+        {
+
+        }
             
         
     }
