@@ -12,45 +12,49 @@ namespace ConsoleAppProject.App01
     {
         private double miles;
         private double feet;
-       
-        
-        
-       
-     
-        
+
+
+
+
+
+
         public void Run()
-        {  
-            
-            
-         
+        {
+            OutputHeading();
+            InputMiles();
+            CalculateFeet();
+            OutputFeet();
 
 
+
+
+        }
+
+
+        private void OutputHeading()
+        {
+            Console.WriteLine("\n----------------------------------------");
+            Console.WriteLine("             Convert miles to Feet        ");
+            Console.WriteLine("                By Shakthy                ");
+            Console.WriteLine("----------------------------------------\n");
         }
         private void InputMiles()
-        {
-
-        }
-        private viod CalculateFeet()
-        {
-
-        }
-        private void OutputFeet()
         {
             Console.WriteLine("Please enter the number of miles:  ")
             string value = Console.ReadLine();
             miles = Convert.ToDouble(value);
-
         }
-        private void CalculateFeet()
+        private viod CalculateFeet()
         {
-
+            feet = miles * 5280;
         }
         private void OutputFeet()
-
         {
+            Console.WriteLine(miles + "miles is " + feet + "feet!");
 
         }
-            
-        
+
+
+
     }
 }
