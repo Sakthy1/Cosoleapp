@@ -36,12 +36,12 @@ private void Inputheight()
 }
 private void Calculate BMI()
 {
-    BMI=(weight *703)/(height*height);
-    if (BMI<18.5)
+    BMI = (weight * 703) / (height * height);
+    if (BMI < 18.5)
     {
         Console.WriteLine(BMI + "\n Underweight" + "\n Please take some multivitamin to get your ideal weight");
     }
-    else if (BMI>18.5 && BMI <24.9)
+    else if (BMI > 18.5 && BMI < 24.9)
     {
         Console.WriteLine(BMI + "\n Normal" + "\n Good and  take your ideal weight");
     }
@@ -53,14 +53,9 @@ private void Calculate BMI()
     {
         Console.WriteLine(BMI + "\n Obese" + "\n See a doctor or dietician to have some consultation");
     }
-}
-private void OutputFeet()
-{
-    Console.WriteLine(miles + "miles is " + feet + "feet!");
+
 
 }
-private void CalculateFeet()
-{
 
-}
+
 }
