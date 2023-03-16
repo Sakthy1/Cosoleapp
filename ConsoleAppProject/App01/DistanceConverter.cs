@@ -1,4 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using ConsoleAppProject.Helpers;
 
 namespace ConsoleAppProject.App01
 {
@@ -8,10 +11,16 @@ namespace ConsoleAppProject.App01
     /// <author>
     /// 
     /// </author>
+    /// 
+    //sihanharoon@gmail.com
     public class DistanceConverter
     {
         private double miles;
         private double feet;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         public void Run()
         {
             OutputHeading();
@@ -34,7 +43,10 @@ namespace ConsoleAppProject.App01
             string value = Console.ReadLine();
             miles = Convert.ToDouble(value);
         }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         private void CalculateFeet()
         {
             feet = miles * 5280;

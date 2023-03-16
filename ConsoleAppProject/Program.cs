@@ -1,4 +1,5 @@
 ﻿using ConsoleAppProject.App01;
+using ConsoleAppProject.App02;
 
 using ConsoleAppProject;
 using System;
@@ -27,11 +28,19 @@ namespace ConsoleAppProject
             Console.WriteLine();
             Console.Beep();
 
+<<<<<<< Updated upstream
             //DistanceConverter converter = new DistanceConverter();
             //converter.Run();
 
             BMI calculator = new BMI();
             calculator.Run();
+=======
+            DistanceConverter converter = new DistanceConverter();
+            converter.Run();
+
+            BMI converter1 = new BMI();
+            converter1.Run();
+>>>>>>> Stashed changes
         }
     }
 }
