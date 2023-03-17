@@ -1,9 +1,6 @@
-﻿using ConsoleAppProject.App01;
-using ConsoleAppProject.App02;
-
-using ConsoleAppProject;
-using System;
-using ConsoleAppProject.App02;
+﻿using System;
+using ConsoleAppProject.App03;
+using ConsoleAppProject.Helpers;
 
 namespace ConsoleAppProject
 {
@@ -28,19 +25,35 @@ namespace ConsoleAppProject
             Console.WriteLine();
             Console.Beep();
 
-<<<<<<< Updated upstream
-            //DistanceConverter converter = new DistanceConverter();
-            //converter.Run();
+            StudentGrades Stu = new StudentGrades();
 
-            BMI calculator = new BMI();
-            calculator.Run();
-=======
-            DistanceConverter converter = new DistanceConverter();
-            converter.Run();
+            string[] menu = new string[3];
+            menu[0] = " Distance Converter";
+            menu[1] = " BMI Calculator";
+            menu[2] = " Student Grade & Marks";
 
-            BMI converter1 = new BMI();
-            converter1.Run();
->>>>>>> Stashed changes
+            int choice = ConsoleHelper.SelectChoice(menu);
+            Console.WriteLine();
+
+            if (choice == 1)
+            {
+                Console.Clear();
+                //converter.ConvertDistance();
+            }
+            else if (choice == 2)
+            {
+                Console.Clear();
+                //calculator.CalculateIndex();
+            }
+            else if (choice == 3)
+            {
+                Console.Clear();
+                Stu.Run();
+            }
+            else
+            {
+                Console.WriteLine(" Invalid Choice !");
+            }
         }
     }
 }
