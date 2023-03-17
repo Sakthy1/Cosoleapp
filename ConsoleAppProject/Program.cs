@@ -1,9 +1,12 @@
-﻿using ConsoleAppProject.App01;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
+using ConsoleAppProject.App01;
 using ConsoleAppProject.App02;
+using ConsoleAppProject.App03;
+using ConsoleAppProject.Helpers;
 
-using ConsoleAppProject;
-using System;
-using ConsoleAppProject.App02;
+
 
 namespace ConsoleAppProject
 {
@@ -12,8 +15,8 @@ namespace ConsoleAppProject
     /// when the application is started.  It will be used
     /// to start App01 to App05 for CO453 CW1
     /// 
-    /// This Project has been modified by:
-    /// Derek Peacock 05/02/2022
+    /// 
+    ///
     /// </summary>
     public static class Program
     {
@@ -33,14 +36,16 @@ namespace ConsoleAppProject
             //converter.Run();
 
             BMI calculator = new BMI();
-            calculator.Run();
-=======
+            calculator.Run
             DistanceConverter converter = new DistanceConverter();
             converter.Run();
 
             BMI converter1 = new BMI();
             converter1.Run();
->>>>>>> Stashed changes
+            
+          StudentGrades = new StudentGrades();
+            StudentGrades.Run();
+
         }
     }
 }
